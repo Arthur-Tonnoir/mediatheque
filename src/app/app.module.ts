@@ -9,6 +9,7 @@ import { NavBarComponent } from './_commons/nav-bar/nav-bar.component';
 import { NavFoundComponent } from './_commons/nav-found/nav-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductPageComponent } from './pages/product-page/product-page.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

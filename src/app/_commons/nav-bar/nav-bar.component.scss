@@ -1,0 +1,31 @@
+nav{
+  display: flex;
+  flex-direction: row;
+  background-color: #800008;
+  padding: 5px;
+  ul
+  {
+    padding-left: 15px;
+    list-style: none;
+    li{
+      display: inline;
+    }
+    .parent
+    {
+      a
+      {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+      }
+    }
+    .enfant{
+      margin: 10%;
+      a{
+        color: white;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+}
