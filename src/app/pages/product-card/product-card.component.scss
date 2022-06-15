@@ -1,0 +1,12 @@
+.mat-card-title{
+  text-align: center;
+  font-size: 18px;
+}
+.mat-card-image{
+  padding: 0 30%;
+  img{
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+  }
+}

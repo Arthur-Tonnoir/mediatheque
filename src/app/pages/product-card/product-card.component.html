@@ -1,12 +1,12 @@
-<div>
-  <div>{{title}}</div>
-  <div *ngIf="imgUrl.length > 7">
+<mat-card>
+  <h1 mat-card-title>{{title}}</h1>
+  <div mat-card-image *ngIf="imgUrl.length > 7">
     <img src="{{imgUrl}}" alt="">
   </div>
-  <div *ngIf="imgUrl.length <7 ">
+  <div mat-card-image *ngIf="imgUrl.length <7 ">
     <img src="https://m.media-amazon.com/images/I/31vCz4Ik49L._AC_.jpg" alt="">
   </div>
-  <div>{{text}}</div>
+  <div mat-card-content>{{text}}</div>
   <button>Details</button>
-</div>
+</mat-card>
 

@@ -1,12 +1,17 @@
-<h3 >Lists des {{title}}</h3>
-<div *ngIf="title === 'film'">
-  <div *ngFor="let film of films" >
-    <app-product-card [title]="film.title" [text]="film.text" [imgUrl]="film.imgUrl"></app-product-card>
+<div class="parrent" *ngIf="title === 'film'">
+  <div class="parrent-title"><h3>Lists des {{title}}</h3></div>
+  <div class="enfant">
+    <div class="enfant-card" *ngFor="let film of films" >
+      <app-product-card [title]="film.title" [text]="film.text" [imgUrl]="film.imgUrl"></app-product-card>
+    </div>
   </div>
 </div>
-<div *ngIf="title === 'album'">
-  <div *ngFor="let album of albums">
-  <app-product-card [title]="album.title" [text]="album.text" [imgUrl]="album.imgUrl"></app-product-card>
+<div class="parrent" *ngIf="title === 'album'">
+  <div class="parrent-title"><h3>Lists des {{title}}</h3></div>
+  <div class="enfant">
+    <div class="enfant-card" *ngFor="let album of albums">
+    <app-product-card [title]="album.title" [text]="album.text" [imgUrl]="album.imgUrl"></app-product-card>
+  </div>
 </div>
 </div>
 

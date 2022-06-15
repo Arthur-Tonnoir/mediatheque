@@ -1,4 +1,23 @@
-h3{
+.parrent{
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  .parrent-title
+    {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin: 4%;
+    }
+  .enfant{
+    display: flex;
+    align-items: center;
+
+    .enfant-card{
+      display: flex;
+      flex-direction: row;
+      margin: 2%;
+    }
+  }
 }
+
+
