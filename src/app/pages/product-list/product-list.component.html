@@ -1,0 +1,4 @@
+<h3 >Lists des {{title}}</h3>
+<div *ngFor="let album of albums" >
+  <app-product-card [title]="album.title" [text]="album.text" [imgUrl]="album.imgUrl"></app-product-card>
+</div>

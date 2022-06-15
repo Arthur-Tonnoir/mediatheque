@@ -10,6 +10,8 @@ import { NavFoundComponent } from './_commons/nav-found/nav-found.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductListComponent } from './pages/product-list/product-list.component';
+import { ProductCardComponent } from './pages/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavBarComponent,
     NavFoundComponent,
     HomePageComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    ProductListComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

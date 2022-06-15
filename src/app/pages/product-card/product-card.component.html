@@ -1,0 +1,12 @@
+<div>
+  <div>{{title}}</div>
+  <div *ngIf="imgUrl.length > 7">
+    <img src="{{imgUrl}}" alt="">
+  </div>
+  <div *ngIf="imgUrl.length <7 ">
+    <img src="https://m.media-amazon.com/images/I/31vCz4Ik49L._AC_.jpg" alt="">
+  </div>
+  <div>{{text}}</div>
+  <button>Details</button>
+</div>
+
