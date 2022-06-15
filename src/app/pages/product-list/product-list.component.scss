@@ -1,17 +1,16 @@
 .parrent{
   display: flex;
   flex-direction: column;
-  .parrent-title
-    {
-      display: flex;
-      text-align: center;
-      justify-content: center;
-      margin: 4%;
-    }
-  .enfant{
+  .title
+  {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 4%;
+  }
+  .enfant-container{
     display: flex;
     align-items: center;
-
     .enfant-card{
       display: flex;
       flex-direction: row;
