@@ -1,14 +1,26 @@
+<!-- Conteneur principale qui acceuillera les cards films -->
 <div class="parrent" *ngIf="title === 'film'">
-  <div class="title"><h3>Lists des {{title}}</h3></div>
+  <!-- Conteneur du titre de la liste -->
+  <div class="title">
+    <h3>Lists des {{title}}</h3>
+  </div>
+  <!-- Conteneur qui met en ligne les cards  -->
   <div class="enfant-container">
+    <!-- Boucle qui permet de faire appelle produc-card qui génére des cards en arguement les données des films -->
     <div class="enfant-card" *ngFor="let film of films" >
       <app-product-card [title]="film.title" [text]="film.text" [imgUrl]="film.imgUrl"></app-product-card>
     </div>
   </div>
 </div>
+<!-- Conteneur principale qui acceuillera les cards albums -->
 <div class="parrent" *ngIf="title === 'album'">
-  <div class="title"><h3>Lists des {{title}}</h3></div>
+  <!-- Conteneur du titre de la liste -->
+  <div class="title">
+    <h3>Lists des {{title}}</h3>
+  </div>
+  <!-- Conteneur qui met en ligne les cards  -->
   <div class="enfant-container">
+    <!-- Boucle qui permet de faire appelle produc-card qui génére des cards en arguement les données des albums -->
     <div class="enfant-card" *ngFor="let album of albums">
     <app-product-card [title]="album.title" [text]="album.text" [imgUrl]="album.imgUrl"></app-product-card>
   </div>

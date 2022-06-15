@@ -1,12 +1,20 @@
+<!-- Conteneur principale qui contien les élements de la cards -->
 <mat-card>
+  <!-- Titre de la cards -->
   <h1 mat-card-title>{{title}}</h1>
+  <!-- Conteneur qui vérifie l'url de l'image si elle existe, si elle existe ajout l'image par defaut ci-dessous (voir deuxieme conteneur) -->
   <div mat-card-image *ngIf="imgUrl.length > 7">
+    <!-- Image de la cards -->
     <img src="{{imgUrl}}" alt="">
   </div>
+  <!-- Conteneur qui ajout une image par défaut  -->
   <div mat-card-image *ngIf="imgUrl.length <7 ">
+    <!-- Image par defaut de la cards -->
     <img src="https://m.media-amazon.com/images/I/31vCz4Ik49L._AC_.jpg" alt="">
   </div>
+  <!-- Conteneur qui contien de le text -->
   <div mat-card-content>{{text}}</div>
+  <!-- Bouton détails (inactif) -->
   <button>Details</button>
 </mat-card>
 
